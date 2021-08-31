@@ -1,12 +1,12 @@
 import Foundation
  
 public struct StringHelperPackage {
-    public init() {}
-    public func localizedString(_ string: String) -> String {
+    
+    func localizedString(_ string: String) -> String {
         string.localized()
     }
     
-    public func joinAttributedStrings(_ strings: NSAttributedString...) -> NSAttributedString {
+    func joinAttributedStrings(_ strings: NSAttributedString...) -> NSAttributedString {
         return NSAttributedString(string: strings.map { $0.string }.joined())
     }
 }
